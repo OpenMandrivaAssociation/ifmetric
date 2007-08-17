@@ -33,6 +33,6 @@ Lower metrics correlate with higher priorities.
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_sbindir}/%{name}
-%{_mandir}/man8/%{name}.8.bz2
+%{_mandir}/man8/%{name}.*
 
 
