@@ -7,7 +7,6 @@ Group: 		System/Configuration/Networking
 Url: 		http://0pointer.de/lennart/projects/ifmetric/
 Source0:	http://0pointer.de/lennart/projects/ifmetric/%{name}-%{version}.tar.bz2
 BuildRequires:	lynx
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 ifmetric is a Linux tool for setting the metrics of all IPv4 routes
