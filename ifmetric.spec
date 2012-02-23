@@ -3,12 +3,11 @@ Name:		ifmetric
 Version:	0.3
 Release:	10
 License:	GPL
-Group: 		System/Configuration/Networking
-Url: 		http://0pointer.de/lennart/projects/ifmetric/
+Group:		System/Configuration/Networking
+Url:		http://0pointer.de/lennart/projects/ifmetric/
 Source0:	http://0pointer.de/lennart/projects/ifmetric/%{name}-%{version}.tar.bz2
 Patch0:		ifmetric-0.3-netlink-fix.patch
 BuildRequires:	lynx
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 ifmetric is a Linux tool for setting the metrics of all IPv4 routes
@@ -25,16 +24,8 @@ Lower metrics correlate with higher priorities.
 %make
 
 %install
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
-
 %makeinstall
 
-%clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
-
 %files
-%defattr(644,root,root,755)
-%attr(755,root,root) %{_sbindir}/%{name}
+%{_sbindir}/%{name}
 %{_mandir}/man8/%{name}.*
-
-
