@@ -2,7 +2,7 @@ Summary:	Tool to change the priority of IPv4 routes
 Name:		ifmetric
 Version:	0.3
 Release:	10
-License:	GPL
+License:	GPLv2
 Group:		System/Configuration/Networking
 Url:		http://0pointer.de/lennart/projects/ifmetric/
 Source0:	http://0pointer.de/lennart/projects/ifmetric/%{name}-%{version}.tar.bz2
