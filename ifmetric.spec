@@ -1,13 +1,12 @@
 Summary:	Tool to change the priority of IPv4 routes
 Name:		ifmetric
 Version:	0.3
-Release:	%manbo_mkrel 11
+Release:	11
 License:	GPL
 Group: 		System/Configuration/Networking
 Url: 		http://0pointer.de/lennart/projects/ifmetric/
 Source0:	http://0pointer.de/lennart/projects/ifmetric/%{name}-%{version}.tar.bz2
 BuildRequires:	lynx
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 ifmetric is a Linux tool for setting the metrics of all IPv4 routes
@@ -23,12 +22,7 @@ Lower metrics correlate with higher priorities.
 %make
 
 %install
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
-
 %makeinstall
-
-%clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 
 %files
 %defattr(644,root,root,755)
