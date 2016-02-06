@@ -18,7 +18,7 @@ Lower metrics correlate with higher priorities.
 %setup -q
 
 %build
-%configure2_5x --disable-xmltoman
+%configure --disable-xmltoman
 %make
 
 %install
@@ -27,4 +27,3 @@ Lower metrics correlate with higher priorities.
 %files
 %{_sbindir}/%{name}
 %{_mandir}/man8/%{name}.*
-
