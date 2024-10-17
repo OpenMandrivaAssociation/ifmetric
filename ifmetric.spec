@@ -4,7 +4,7 @@ Version:	0.3
 Release:	23
 License:	GPLv2
 Group: 		System/Configuration/Networking
-Url: 		http://0pointer.de/lennart/projects/ifmetric/
+Url: 		https://0pointer.de/lennart/projects/ifmetric/
 Source0:	http://0pointer.de/lennart/projects/ifmetric/%{name}-%{version}.tar.bz2
 BuildRequires:	lynx
 
